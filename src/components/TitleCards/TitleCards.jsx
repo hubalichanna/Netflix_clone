@@ -1,9 +1,6 @@
 import React,{useEffect, useRef, useState} from 'react'
 import './TitleCards.css'
-import cards_data from '../../assets/cards/Cards_data'
 import { Link } from 'react-router-dom'
-
-
 
 const TitleCards = ({title,category}) => {
 
@@ -17,7 +14,8 @@ const TitleCards = ({title,category}) => {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYTBjNTE0YWExM2FlNzFhMWRjZTIzMWUwNzEwMTY1NiIsIm5iZiI6MTczOTczODE1Ni4xOTM5OTk4LCJzdWIiOiI2N2IyNGMyY2E0MGQwNGJjOTM5ZjllMGEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.fahHsofrwR8OVQ0s8Qj9LcX3VjnRCpvG53fmjETNDio'
     }
   };
-
+  
+  
   const handleWheel = (event)=>{
     event.preventDefault();
     cardsRef.current.scrollLeft +=event.deltaY;
